@@ -45,6 +45,14 @@ Press tmux `prefix + s` (for example, `C-a s`) and you will see a nice menu:
 * Close menu      (q) - close menu
 ```
 
+## Configuring the binding
+
+The binding may be configured via your `.tmux.conf` as:
+
+```
+set -g @spotifybinding 'S'
+```
+
 ## Other plugins
 * [tmux-network-bandwidth](https://github.com/xamut/tmux-network-bandwidth)
 * [tmux-weather](https://github.com/xamut/tmux-weather)
