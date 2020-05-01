@@ -89,7 +89,7 @@ show_menu() {
         "-#[nodim]Artist: $artist"    "" "" \
         "-#[nodim]Album: $album"      "" "" \
         "" \
-        "Copy URL"         c "run -b 'printf \"%s\" $id | pbcopy'" \
+        "Copy URL"         c "run -b 'printf \"%s\" $id | sed \"s/spotify:track:/https:\/\/open.spotify.com\/track\//\" | pbcopy'" \
         "Open Spotify"     o "run -b 'source \"$CURRENT_DIR/spotify.sh\" && open_spotify'" \
         "Play/Pause"       p "run -b 'source \"$CURRENT_DIR/spotify.sh\" && toggle_play_pause'" \
         "Previous"         b "run -b 'source \"$CURRENT_DIR/spotify.sh\" && previous_track'" \
